@@ -350,7 +350,7 @@ train_df.shape, test_df.shape
 
 
 
-# 2. Wrangle Data (Preprocess Data)
+## 2. Wrangle Data (Preprocess Data)
 
 After you have selected the data, you need to consider how you are going to use the data. This Wrangling step is about getting the selected data into a form that you can work. 
 
@@ -363,7 +363,7 @@ The 4 common data Wrangling steps are formatting, cleaning and sampling:
 
 4. Sampling: There may be far more selected data available than you need to work with. More data can result in much longer running times for algorithms and larger computational and memory requirements. You can take a smaller representative sample of the selected data that may be much faster for exploring and prototyping solutions before considering the whole dataset. This is also known as __Batching__. We will learn more about this in upcoming tutorials.
 
-## Cleaning
+### Cleaning
 
 We will first do this for the Age feature.
 
@@ -647,7 +647,7 @@ train_df[['Embarked', 'Survived']].groupby(['Embarked'], as_index=False).mean().
 
 
 
-## Binning
+### Binning
 
 Let us create Age bands and determine correlations with Survived.
 
@@ -877,15 +877,15 @@ train_df.head()
 
 
 
-# 3. Transform Data
+## 3. Transform Data
 
 The final step is to transform the process data. The specific algorithm you are working with and the knowledge of the problem domain will influence this step. You may have to apply various transformations of your preprocessed data as you work on your problem.The three most common data transformations are scaling, attribute decompositions and attribute aggregations. This step is also referred to as __Feature Engineering__.
 
-## Scaling
+### Scaling
 
 The preprocessed data may contain attributes with a mixtures of scales for various quantities such as Rupees, Measuring units(Kilogram, Meter) and sales volume. Many machine learning methods like data attributes to have the same scale such as between 0 and 1 for the smallest and largest value for a given feature. Consider any feature scaling you may need to perform. Since we don't have any attribute which has large scale valuea and therefore, we can ignore this step.
 
-## Encoding
+### Encoding
 
 As Machine learning method works on numeric data, we have convert all selected attributes contains categorical data in string format. In our example, we already converted one attribute _Sex_ into 0(Male) and 1(Female). Now we will convert _Embarked_ attribute where 'S'= 0, 'C'= 1, 'Q'= 2.
 
@@ -971,13 +971,13 @@ train_df.head()
 
 
 
-## Decomposition
+### Decomposition
 
 There may be features that represent a complex concept that may be more useful to a machine learning method when split into the constituent parts. An example is a date that may have day and time components that in turn could be split out further. Perhaps only the hour of day is relevant to the problem being solved. consider what feature decompositions you can perform.
 
 In our example, if we considered the Name attribute then we can extract the Title (Mr, Mrs, Miss, Master and so on) from it and rest of the name can be decomposed. You may ask why __"Title"__? We can assume that a person with high grade title may given higher preference by the rescue team.
 
-## Aggregation
+### Aggregation
 
 There may be features that can be aggregated into a single feature that would be more meaningful to the problem you are trying to solve. In our example, we can combine _Parch_ and _SibSp_ in order to create a new attribute _FamilySize_. This step will enable us to drop _Parch_ and _SibSp_ from our datasets.
 
