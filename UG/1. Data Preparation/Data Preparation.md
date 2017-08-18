@@ -15,7 +15,7 @@ These steps may be followed in linear manner but it is very likely to be iterati
 
 But before talking about all these steps, I wanted you to download the dataset from the link given below which I'll be using it as an example in this tutorial.
 
-[Click me to download the Titanic Dataset](../Data)
+[Click me to download the Titanic Dataset](../1.Data Preparation/Data)
 
 [Click me to read more information about Titanic Dataset](https://www.kaggle.com/c/titanic/data)
 
