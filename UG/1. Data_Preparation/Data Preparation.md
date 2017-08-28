@@ -7,7 +7,7 @@ I hope by the end of this tutorial, you may realize the significance of Data Pre
 
 To prepare the data ready for our ML model, we have to follow 3 steps in general:
 1. Selection of Data
-2. Data Preprocessing
+2. Data Wrangling
 3. Transform Data
 
 These steps may be followed in linear manner but it is very likely to be iterative with many loops. In many of the steps, you may require domain knowledge and your hidden talent (common sense).
