@@ -1171,6 +1171,21 @@ train_df.head()
 </div>
 
 
+Now Lets save the these data as a pickle file for later use.
+
+
+```python
+import pickle
+
+with open("Data/train_df.pickle","wb") as f:
+    pickle.dump(train_df, f)
+
+with open("Data/test_df.pickle","wb") as f:
+    pickle.dump(test_df, f)
+    
+with open("Data/combine.pickle","wb") as f:
+    pickle.dump(combine, f)
+```
 
 # Summary
 
