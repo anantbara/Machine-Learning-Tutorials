@@ -354,7 +354,7 @@ train_df.shape, test_df.shape
 
 After you have selected the data, you need to consider how you are going to use the data. This Wrangling step is about getting the selected data into a form that you can work. 
 
-The 4 common data Wrangling steps are formatting, cleaning and sampling:
+The four common data Wrangling steps are formatting, cleaning, binning and sampling:
 1. Formatting: May be the the data on which you are currently working is not correct format. The data may be in a relational database and you would like it in a flat file, or you may want to extract the data from some other resources into an appropriate format. In our example, we already imported dataset from an appropriate file(.csv).
 
 2. Cleaning: Cleaning data is the removal or fixing of missing data. There may be data instances that are incomplete and do not carry the data you believe you need to address the problem. These instances may need to be removed. Additionally, there may be sensitive information in some of the attributes and these attributes may need to be anonymized or removed from the data entirely.
@@ -879,7 +879,7 @@ train_df.head()
 
 ## 3. Transform Data
 
-The final step is to transform the process data. The specific algorithm you are working with and the knowledge of the problem domain will influence this step. You may have to apply various transformations of your preprocessed data as you work on your problem.The three most common data transformations are scaling, attribute decompositions and attribute aggregations. This step is also referred to as __Feature Engineering__.
+The final step is to transform the process data. The specific algorithm you are working with and the knowledge of the problem domain will influence this step. You may have to apply various transformations of your preprocessed data as you work on your problem.The four most common data transformations are scaling, encoding, attribute decompositions and attribute aggregations. This step is also referred to as __Feature Engineering__.
 
 ### Scaling
 
