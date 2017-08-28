@@ -1,25 +1,20 @@
+# Supervised Learning
 
-# Introduction
+Supervised learning is where you have input variables (x) and an output variable (Y) and you use an algorithm to learn the mapping function from the input to the output. From it, the supervised learning algorithm seeks to build a model that can make predictions of the response values(output variable) for a new input variable.
 
-In last tutorial, we have seen the very first and most important step before actually working on Machine Learning i.e. [Data Preparation](https://github.com/anantbara/Machine-Learning-Tutorials/blob/master/UG/1.%20Data_Preparation/Data%20Preparation.md). Now we are going to explore and experience the power of Machine Learning. Machine learning is the science of getting computers to act without being explicitly programmed. The iterative aspect of machine learning is important because as models are exposed to new data, they are able to independently adapt. They learn from previous computations to produce reliable, repeatable decisions and results. 
+Supervised learning problems can be further grouped into regression and classification problems.
+* __Classification__: for categorical response values, where the data can be separated into specific “classes”. Ex- “red” or “blue”.
+* __Regression__: for continuous-response values. Ex- “dollars” or “weight” because they can have any real values.
 
-## Types of Machine Learning
+Some Popular example of Supervised machine learning algorithm are:
+1) Tree
+2) Naive Bayes
+3) SVM (Support Vector Machine)
+4) Logistic Regression
 
-### 1) Supervised Learning
-* In a given example, the input and its corresponding output is also given.
-* Denoted by (x,y) where x=input and y=output/label
+Lets see each one of them by implementing them on our example.
 
-### 2) Unsupervised Learning
-* Output is unknown for each given input
-* Input data is clustered/grouped based on their structure/pattern similarity.
-
-### 3) Reinforcement Learning
-* Determine what to do based on rewards and punishments.
-
-### 4) Semi-supervised Learning
-* Combination of both Supervised and Unsupervised Learning.
-
-Before proceeding to next step, Let us import all the files which we saved in last tutorial.
+But before proceeding to next step, let us import all the files which we saved in last tutorial.
 
 
 ```python
@@ -67,23 +62,7 @@ print(X_train.shape, y_test.shape)
     (623, 5) (268,)
     
 
-## Supervised Learning
-
-Supervised learning is where you have input variables (x) and an output variable (Y) and you use an algorithm to learn the mapping function from the input to the output. From it, the supervised learning algorithm seeks to build a model that can make predictions of the response values(output variable) for a new input variable.
-
-Supervised learning problems can be further grouped into regression and classification problems.
-* __Classification__: for categorical response values, where the data can be separated into specific “classes”. Ex- “red” or “blue”.
-* __Regression__: for continuous-response values. Ex- “dollars” or “weight” because they can have any real values.
-
-Some Popular example of Supervised machine learning algorithm are:
-1) Tree
-2) Naive Bayes
-3) SVM (Support Vector Machine)
-4) Logistic Regression
-
-Lets see each one of them by implementing them on our example.
-
-### Tree (Decision Tree)
+## Tree (Decision Tree)
 
 Decision Trees (DTs) are a non-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
 
@@ -105,7 +84,7 @@ print("Accuracy : ",score * 100)
     Accuracy :  80.223880597
     
 
-### Naive Bayes
+## Naive Bayes
 
 Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of independence between every pair of features.
 
@@ -123,7 +102,7 @@ print("Accuracy : ",score * 100)
     Accuracy :  77.9850746269
     
 
-### SVM (Support Vector Machine)
+## SVM (Support Vector Machine)
 
 Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers detection.
 
@@ -149,7 +128,7 @@ print("Accuracy : ",score * 100)
     Accuracy :  81.3432835821
     
 
-### Logistic Regression
+## Logistic Regression
 
 Logistic Regression (aka logit, MaxEnt) classifier. It is similar to linear regression, with the only difference being the y data, which should contain integer values indicating the class relative to the observation.
 
