@@ -1171,7 +1171,7 @@ train_df.head()
 </div>
 
 
-Now Lets save the these data as a pickle file for later use.
+Now let's save these data as a pickle file for later use.
 
 
 ```python
