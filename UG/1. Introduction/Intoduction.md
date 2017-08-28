@@ -1,6 +1,6 @@
 # Introduction
 
-In last tutorial, we have seen the very first and most important step before actually working on Machine Learning i.e. [Data Preparation](https://github.com/anantbara/Machine-Learning-Tutorials/blob/master/UG/1.%20Data_Preparation/Data%20Preparation.md). Now we are going to explore and experience the power of Machine Learning. Machine learning is the science of getting computers to act without being explicitly programmed. The iterative aspect of machine learning is important because as models are exposed to new data, they are able to independently adapt. They learn from previous computations to produce reliable, repeatable decisions and results. 
+In last tutorial, we have seen the very first and most important step before actually working on Machine Learning i.e. [Data Preparation](https://github.com/anantbara/Machine-Learning-Tutorials/blob/master/UG/2.%20Data_Preparation/Data%20Preparation.md). Now we are going to explore and experience the power of Machine Learning. Machine learning is the science of getting computers to act without being explicitly programmed. The iterative aspect of machine learning is important because as models are exposed to new data, they are able to independently adapt. They learn from previous computations to produce reliable, repeatable decisions and results. 
 
 ## Types of Machine Learning
 
