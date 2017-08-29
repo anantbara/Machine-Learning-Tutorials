@@ -192,9 +192,5 @@ print("Accuracy : ", correct/len(y_test_np))
     Accuracy :  0.753731343283582
     
 
-As you can see, KNN gives the best result as compared to kmeans and Kmode. But that doesn't mean that KNN is always the best choice. It totally depends on the data and the problem we are trying to solve. 
+As you can see, KNN gives the best result as compared to kmeans and Kmode. But that doesn't mean that KNN is always the best choice. It's totally depends on the data and the problem we are trying to solve. 
 
-
-```python
-
-```
